@@ -1,0 +1,48 @@
+.img {
+  display: flex;
+  align-items: center;
+  height: 60%;
+  width: 40%;
+  border-radius: 40px;
+  overflow: hidden;
+}
+
+.safe {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  text-align: left;
+  height: 60%;
+  width: 40%;
+  min-width: 0;
+  font-size: 2rem;
+  padding: 2%;
+}
+
+.Learn {
+  font-size: 1.2rem;
+  color: #25d366;
+}
+
+.Learn:hover {
+  color: white;
+  cursor: pointer;
+}
+
+.Learn::after {
+  content: "";
+  height: 2px;
+  width: 0%;
+  background-color: #25d366;
+  display: block;
+  transition: 0.5s ease-in-out;
+}
+
+.Learn:hover::after {
+  color: #25d366;
+  height: 2px;
+  width: 100%;
+  margin-top: 0.2rem;
+  background-color: #25d366;
+  display: block;
+}

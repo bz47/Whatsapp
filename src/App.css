@@ -1,38 +1,761 @@
+* {
+  box-sizing: border-box;
+  min-width: 0;
+  font-family: Helvetica, Arial, sans-serif;
+}
+
 .App {
   text-align: center;
+  background-color: #1c1e21;
+  padding-bottom: 4rem;
+  margin: 0 auto;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+a,
+a:visited,
+a:active {
+  color: inherit;
+  text-decoration: none;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+button:hover,
+a:hover,
+select:hover {
+  cursor: pointer;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.download:hover {
+  transition-duration: 1s;
+  background-color: black;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.download2:hover {
+  transition-duration: 1s;
+  background-color: black;
+  color: white;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.download {
+  background-color: #25d366;
+  height: 3rem;
+  width: 8rem;
+  min-width: none;
+  border-radius: 45px;
+  border: 1px;
+  font-size: 1rem;
+  letter-spacing: 0.2rem;
+}
+
+/*********NAV*********/
+
+#t.Drop {
+  position: relative;
+  bottom: 0.1rem;
+}
+
+#log {
+  display: block;
+  background-image: url("/Users/brandonreleford/Desktop/DevProjects/reactApps/whatsapp/public/whatslogogog.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 100%;
+  min-width: 100%;
+  overflow: hidden;
+}
+
+#ul {
+  width: 85%;
+  padding-left: 20%;
+  padding-right: 17%;
+  display: flex;
+  justify-content: center;
+  min-width: fit-content;
+  margin-left: 4%;
+}
+
+li {
+  padding-right: 2rem;
+  min-width: none;
+}
+
+#v {
+  font-size: 1rem;
+  position: relative;
+  bottom: 0.3rem;
+  margin-left: 3px;
+}
+
+/**************Banner*************/
+
+#banfam {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-image: url("/Users/brandonreleford/Desktop/DevProjects/reactApps/whatsapp/public/whatsgirlz.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  border-radius: 40px;
+  height: 90%;
+  max-width: 100%;
+  color: white;
+  font-size: 4rem;
+}
+
+#banner {
+  margin-top: -1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 65rem;
+  padding-top: 1rem;
+  background-color: rgb(249, 246, 234);
+  width: 100%;
+}
+
+#stickers {
+  height: 80%;
+  width: 30%;
+  overflow: hidden;
+}
+
+#stick {
+  display: block;
+  background-image: url("/Users/brandonreleford/Desktop/DevProjects/reactApps/whatsapp/public/whatsscreen.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%;
+  width: auto;
+  background-position: bottom;
+  background-size: contain;
+}
+
+#join {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  height: 80%;
+  overflow: hidden;
+  font-size: 2rem;
+}
+
+/***************Pt2****************/
+
+#pt2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 55rem;
+  background-color: rgb(249, 246, 234);
+  padding: 0% 1% 6%;
+}
+
+#twogH {
+  display: flex;
+  width: 99%;
+  height: 35%;
+  font-size: 3rem;
+  margin: 0 auto;
+}
+#twogH2 {
+  display: flex;
+  width: 99%;
+  height: 35%;
+  font-size: 3rem;
+  margin: 0 auto;
+}
+
+#twog {
+  display: flex;
+  flex-wrap: wrap;
+  background-image: url("/Users/brandonreleford/Desktop/DevProjects/reactApps/whatsapp/public/whatsbubbles.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 100%;
+  width: 99%;
+}
+
+#twog2 {
+  display: flex;
+  flex-wrap: wrap;
+  background-image: url("/Users/brandonreleford/Desktop/DevProjects/reactApps/whatsapp/public/whatsbubs2.png");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100%;
+  width: 100%;
+}
+
+/***************Pt3******************/
+
+#green.Learn:hover {
+  color: #25d366;
+}
+
+.Learn::after {
+  content: "";
+  height: 2px;
+  width: 0%;
+  background-color: #25d366;
+  display: block;
+  transition: 0.5s ease-in-out;
+}
+
+.Learn:hover::after {
+  color: #25d366;
+  height: 2px;
+  width: 100%;
+  margin-top: 0.2rem;
+  background-color: #25d366;
+  display: block;
+}
+
+#pt3 {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding-top: 3rem;
+  height: 55rem;
+  background-color: #1c1e21;
+  color: white;
+}
+
+#me {
+  background-image: url("/Users/brandonreleford/Desktop/DevProjects/reactApps/whatsapp/public/encrypt.png");
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 80%;
+  min-width: 100%;
+  height: 90%;
+}
+
+#speak {
+  font-size: 4rem;
+}
+
+#freely {
+  font-size: 3rem;
+  color: #25d366;
+  margin-top: 0px;
+  position: relative;
+  right: 30px;
+}
+
+/****************Pt4**************/
+
+#pt4 {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding-top: 3rem;
+  padding-bottom: 5rem;
+  height: 50rem;
+  background-color: #dcf8c6;
+  border-bottom-left-radius: 50px;
+  border-bottom-right-radius: 50px;
+  font-size: 2rem;
+}
+
+#connect {
+  padding-bottom: 20%;
+  padding-right: 3%;
+  margin-left: 5%;
+  width: 30%;
+  font-size: 3rem;
+  font-weight: 400;
+}
+
+#cardHolder {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 77%;
+  height: 1200px;
+  margin-top: -7.5%;
+}
+
+/***********Pt5**************/
+
+#green.Learn:hover {
+  color: #25d366;
+}
+
+#pt5 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 3rem 0;
+  min-height: 55rem;
+  background-color: rgb(249, 246, 234);
+}
+
+#P1 {
+  background-image: url("/Users/brandonreleford/Desktop/DevProjects/reactApps/whatsapp/public/whatsscreen.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+#P2 {
+  background-image: url("/Users/brandonreleford/Desktop/DevProjects/reactApps/whatsapp/public/smilekiss.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+#P3 {
+  background-image: url("/Users/brandonreleford/Desktop/DevProjects/reactApps/whatsapp/public/veggie.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+/************FOOT2************/
+
+#l1 {
+  display: flex;
+  padding-left: 10%;
+  width: 20%;
+  grid-area: 1/1/2/2;
+}
+
+#l2 {
+  display: flex;
+  padding-left: 10%;
+  width: 20%;
+  grid-area: 1/2/2/3;
+}
+
+#r1 {
+  display: flex;
+  justify-content: space-evenly;
+  padding-left: 5%;
+  width: 80%;
+  margin: 2rem;
+}
+
+#r2 {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  padding-right: 10%;
+  width: 100%;
+}
+
+#twitter {
+  height: 4vw;
+  width: 6vw;
+  border-radius: 50%;
+  background-image: url("/Users/brandonreleford/Desktop/DevProjects/reactApps/whatsapp/public/twitter.svg");
+  background-size: 60%;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+#insta {
+  height: 4vw;
+  width: 6vw;
+  border-radius: 50%;
+  background-image: url("/Users/brandonreleford/Desktop/DevProjects/reactApps/whatsapp/public/instagram.svg");
+  background-size: 60%;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+#facebook {
+  height: 4vw;
+  width: 6vw;
+  border-radius: 50%;
+  background-image: url("/Users/brandonreleford/Desktop/DevProjects/reactApps/whatsapp/public/facebook-f.svg");
+  background-size: 40%;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+#youtube {
+  height: 4vw;
+  width: 6vw;
+  border-radius: 50%;
+  background-image: url("/Users/brandonreleford/Desktop/DevProjects/reactApps/whatsapp/public/youtube.svg");
+  background-size: 60%;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+#footer2 {
+  display: flex;
+  justify-items: center;
+  align-items: center;
+  width: 75%;
+  margin: 0 auto;
+  color: white;
+}
+
+/***********CarouselItem**********/
+
+#limit {
+  display: flex;
+  flex-direction: column;
+  border: solid red 2px;
+  align-items: flex-start;
+  justify-items: space-around;
+  padding: 3%;
+  height: 90%;
+  width: 90%;
+  min-width: none;
+  font-size: 1.5rem;
+  font-weight: 500;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+#more {
+  margin-top: 5%;
+  border-radius: 50px;
+  height: 13%;
+  width: fit-content;
+  border: solid black 1px;
+  background-color: inherit;
+  padding: 2%;
+  display: flex;
+  align-items: center;
+}
+
+#more:hover {
+  background-color: black;
+  color: white;
+  transition-duration: 2s;
+  transition-timing-function: cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+#smallbox {
+  display: flex;
+  flex-wrap: wrap;
+  border: solid green 3px;
+  align-items: center;
+  width: 100%;
+  height: 12rem;
+  padding: 2%;
+  font-size: smaller;
+}
+
+#description {
+  display: flex;
+  flex-wrap: wrap;
+  border: solid green 2px;
+  width: 100%;
+  padding-right: 5%;
+  text-align: left;
+  font-size: 2rem;
+  font-weight: 400;
+}
+
+#web {
+  margin-right: 3%;
+  min-width: fit-content;
+}
+
+#web::after {
+  content: "";
+  width: 0%;
+  margin-top: 0.2rem;
+  height: 2px;
+  display: block;
+  transition: 0.5s ease-in-out;
+  background-color: #25d366;
+}
+
+#web:hover::after {
+  content: "";
+  width: 100%;
+  height: 2px;
+  display: block;
+  background-color: #25d366;
+}
+
+#quote {
+  display: flex;
+  flex-wrap: wrap;
+  padding-top: 1%;
+  padding-bottom: 1%;
+  padding-left: 2%;
+  padding-right: 2%;
+  color: black;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 93%;
+  height: 20%;
+  font-size: 3rem;
+  margin: 0 auto;
+}
+
+.img {
+  display: flex;
+  align-items: center;
+  height: 60%;
+  width: 40%;
+  border-radius: 40px;
+  overflow: hidden;
+}
+
+#pt4 {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding-top: 3rem;
+  padding-bottom: 5rem;
+  height: 50rem;
+  background-color: #dcf8c6;
+  border-bottom-left-radius: 50px;
+  border-bottom-right-radius: 50px;
+  font-size: 2rem;
+}
+
+#slider {
+  position: relative;
+  right: 180rem;
+  border: solid orange 3px;
+  width: 300%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: flex-start;
+  height: 60%;
+  width: 10%;
+  padding: 3%;
+  margin-right: 3%;
+  border: solid black 2px;
+  background-color: rgb(249, 246, 234);
+}
+
+.read {
+  background-color: inherit;
+  width: 50%;
+  height: 20%;
+  border-radius: 50px;
+  font-weight: bolder;
+}
+
+.read:hover {
+  color: white;
+  background-color: #1c1e21;
+  transition-duration: 1s;
+}
+
+span {
+  font-size: 3rem;
+  font-style: bold;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+#footer {
+  display: flex;
+  justify-content: space-between;
+  width: 75%;
+  border-bottom: solid #33463f 2px;
+  padding-bottom: 2rem;
+  color: white;
+  margin: 3rem auto;
+}
+
+#black {
+  background-image: url("/Users/brandonreleford/Desktop/DevProjects/reactApps/whatsapp/public/blackapp.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  height: 100%;
+  margin-bottom: 5%;
+}
+
+.scroll {
+  margin-top: 3rem;
+  margin-left: 2%;
+}
+
+#leftfoot {
+  display: flex;
+  flex-direction: column;
+  padding: 0% 1%;
+}
+
+.socials {
+  display: flex;
+  justify-content: center;
+  background-color: inherit;
+  color: inherit;
+  border-radius: 50px;
+}
+
+.socials:hover {
+  background-color: #25d366;
+  color: #1c1e21;
+  transition-duration: 1s;
+}
+
+select {
+  width: 60%;
+  height: 40%;
+  text-align: center;
+  background-color: inherit;
+  color: rgb(249, 246, 234);
+  font-size: large;
+  border-radius: 50px;
+  padding-right: 5%;
+  min-width: none;
+}
+
+.indicator-symbol {
+  color: black;
+}
+.indicator-symbol:active {
+  color: white;
+}
+
+@media only screen and (max-width: 1194px) {
+  body {
+    display: flex;
+    justify-content: center;
   }
-  to {
-    transform: rotate(360deg);
+
+  #pt4 {
+    display: none;
+  }
+
+  .Nav {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 0% auto;
+  }
+
+  .Drop,
+  #web {
+    display: none;
+  }
+
+  .Shift {
+    grid-area: 1/1/2/2;
+  }
+
+  .ShiftR {
+    grid-area: 1/2/2/3;
+    padding-left: 75%;
+  }
+
+  .ShiftR button {
+    width: 2rem;
+    height: 2rem;
+    content: "Yes";
+  }
+}
+
+@media only screen and (max-width: 1020px) {
+  #pt4 {
+    display: none;
+  }
+
+  #pt4,
+  #pt5 .Dubsack {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 15%;
+    padding-left: 10%;
+  }
+
+  #pt3 {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+
+  .safe {
+    width: 100%;
+    height: 50%;
+  }
+
+  #flip.Dubsack {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .picz {
+    height: 30rem;
+    width: 40rem;
+    margin-bottom: 0px;
+    padding-top: 0px;
+  }
+
+  .Dubsack span {
+    display: block;
+    position: relative;
+    right: 25%;
+    font-size: 1.5rem;
+    flex-shrink: 2;
+    width: 100%;
+  }
+
+  #keep {
+    padding-left: 15%;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  #pt4 {
+    display: none;
+  }
+
+  #banner {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-end;
+  }
+
+  #stick {
+    display: none;
+  }
+
+  #pt4,
+  #pt5 .Dubsack {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #flip.Dubsack {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  #footer {
+    display: grid;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  #leftfoot {
+    max-height: 20rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1 fr 1fr;
+  }
+}
+
+@media only screen and (max-width: 1200px) and (min-width: 100px) {
+  #pt4 {
+    display: none;
   }
 }

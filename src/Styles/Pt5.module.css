@@ -1,0 +1,76 @@
+.Dubsack {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 1%;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 90%;
+  min-height: 30rem;
+  margin-bottom: 5%;
+  margin-top: 7%;
+}
+
+.Dubsack .picz {
+  justify-content: center;
+  align-items: center;
+  width: 30%;
+  font-size: 3rem;
+  overflow: hidden;
+}
+
+.Dubsack .text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 40%;
+  font-size: 1.5rem;
+  padding: 1%;
+}
+
+.text {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  padding: 4%;
+  text-align: left;
+  width: 60% !important;
+  min-width: 0;
+  height: 30rem;
+  min-height: fit-content;
+}
+
+.text span {
+  text-align: left;
+  width: 100%;
+}
+
+.picz {
+  height: 30rem;
+  width: 40rem;
+  margin-bottom: 0px;
+  padding-top: 0px;
+}
+
+.Learn {
+  font-size: 1.2rem;
+  width: 100%;
+}
+
+.Learn::after {
+  content: "";
+  height: 2px;
+  width: 0%;
+  background-color: #25d366;
+  display: block;
+  transition: 0.5s ease-in-out;
+}
+
+.Learn:hover::after {
+  color: #25d366;
+  height: 2px;
+  width: 13%;
+  margin-top: 0.2rem;
+  background-color: #25d366;
+  display: block;
+}

@@ -1,0 +1,23 @@
+.Holder {
+  height: 80%;
+  width: 95%;
+  min-width: 0;
+  overflow: hidden;
+}
+
+.download {
+  background-color: #25d366;
+  height: 3rem;
+  width: 8rem;
+  min-width: none;
+  border-radius: 45px;
+  border: 1px;
+  font-size: 1rem;
+  letter-spacing: 0.2rem;
+}
+
+.download:hover {
+  transition-duration: 1s;
+  background-color: black;
+  color: white;
+}

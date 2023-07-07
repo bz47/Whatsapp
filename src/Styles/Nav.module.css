@@ -1,0 +1,109 @@
+.Nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 5rem;
+  width: 100%;
+  background-color: rgb(249, 246, 234);
+  z-index: 30;
+  position: fixed;
+  top: 0;
+  opacity: 0.95;
+  overflow: none;
+}
+
+.Hidden {
+  position: fixed;
+  height: 12.5rem;
+  top: 5rem;
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(249, 246, 234);
+  z-index: 20;
+  transition-duration: 2s;
+}
+
+.Box {
+  margin-right: 2rem;
+}
+
+.Box:hover {
+  background-color: #25d366;
+}
+
+.Box {
+  height: 90%;
+  width: 12%;
+  border-radius: 5%;
+  border: solid grey 1px;
+  padding: 2px;
+  overflow: hidden;
+}
+
+.Shift {
+  display: block;
+  height: 70%;
+  width: 30%;
+  margin-left: 2%;
+  overflow: hidden;
+  padding-left: 1%;
+  padding-right: 1%;
+}
+
+.Drop {
+  padding: 2%;
+  outline: none;
+  border: none;
+  background-color: inherit;
+  margin-right: 2%;
+}
+
+.Drop:after {
+  content: "";
+  width: 0%;
+  margin-top: 0.2rem;
+  height: 2px;
+  display: block;
+  transition: 0.5s ease-in-out;
+  background-color: #25d366;
+}
+
+.Drop:hover::after {
+  content: "";
+  width: 100%;
+  height: 2px;
+  display: block;
+  background-color: #25d366;
+}
+
+.ShiftR {
+  width: 50%;
+  display: flex;
+  justify-content: space-around;
+  margin-left: 2%;
+  min-width: fit-content;
+}
+
+.ShiftR button {
+  margin-left: 2%;
+  min-width: fit-content;
+}
+
+.download {
+  background-color: #25d366;
+  height: 3rem;
+  width: 8rem;
+  min-width: none;
+  border-radius: 45px;
+  border: 1px;
+  font-size: 1rem;
+  letter-spacing: 0.2rem;
+}
+
+.download:hover {
+  transition-duration: 1s;
+  background-color: black;
+  color: white;
+}
